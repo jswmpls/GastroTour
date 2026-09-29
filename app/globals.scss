@@ -1,14 +1,11 @@
-root {
-  --text-color: #454648;
-  --main-color: #fbf8f4;
-  --green: #132c27;
-  --red: #cd5053;
-}
+@use "variables" as v;
 
 body {
-  background-color: var(--main-color);
+  background-color: v.$main-color;
+  font-family: manrope, sans-serif;
+  font-size: 16px;
 }
 
 * {
-  color: var(--text-color);
+  color: v.$text-color;
 }

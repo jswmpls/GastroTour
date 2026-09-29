@@ -13,15 +13,17 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header>
-      <Link href="/">GastroTour</Link>
-      <nav>
-        <ul>
+    <header className={styles.header}>
+      <Link href="/" className={styles.logo}>
+        GastroTour
+      </Link>
+      <nav className={styles.nav}>
+        <ul className={styles.list}>
           {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={pathname == link.href ? "active" : ""}
+                className={`${styles.link} ${pathname === link.href ? styles.active : ""}`}
               >
                 {link.label}
               </Link>
@@ -29,7 +31,9 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <Link href="/auth/login">Войти</Link>
+      <Link href="/auth/login" className={styles.login}>
+        Войти
+      </Link>
     </header>
   );
 }

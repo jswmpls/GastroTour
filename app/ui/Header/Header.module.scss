@@ -1,8 +1,27 @@
-header {
-  nav {
-    ul {
-      li {
-      }
+@use "../../variables" as v;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 64px;
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .link {
+    &.active {
+      color: v.$green;
+    }
+
+    &:hover {
+      color: v.$green;
     }
   }
 }
