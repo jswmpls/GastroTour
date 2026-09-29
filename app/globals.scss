@@ -1,0 +1,14 @@
+root {
+  --text-color: #454648;
+  --main-color: #fbf8f4;
+  --green: #132c27;
+  --red: #cd5053;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+* {
+  color: var(--text-color);
+}
