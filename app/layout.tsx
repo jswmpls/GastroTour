@@ -24,8 +24,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="ru"
       className={`${manrope.className} ${sans_caption.className}`}
     >
-      <Header />
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

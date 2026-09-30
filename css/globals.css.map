@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../app/globals.sass"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI","file":"globals.css"}
+{"version":3,"sourceRoot":"","sources":["../.kilo/worktrees/equable-linen/app/globals.scss","../.kilo/worktrees/equable-linen/app/_variables.scss"],"names":[],"mappings":"AAEA;EACE,kBCFW;EDGX;EACA;;;AAGF;EACE,OCTW","file":"globals.css"}

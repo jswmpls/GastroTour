@@ -1,1 +1,33 @@
-/*# sourceMappingURL=Header.module.css.map */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 64px;
+}
+.header .logo {
+  font-size: 24px;
+}
+.header .list {
+  display: flex;
+  gap: 24px;
+}
+.header .link.active {
+  color: #1e453d;
+}
+.header .link:hover {
+  color: #1e453d;
+}/*# sourceMappingURL=Header.module.css.map */  color: #1e453d;
+}
+.header.dark {
+  background: linear-gradient(black, transparent);
+  color: #fbf8f4;
+}
+.header.dark .logo {
+  color: inherit;
+}
+.header.dark .link {
+  color: inherit;
+}
+.header.dark .link.active, .header.dark .link:hover {
+  color: #1e453d;
+}/*# sourceMappingURL=Header.module.css.map */

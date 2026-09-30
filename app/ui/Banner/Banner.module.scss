@@ -1,0 +1,38 @@
+@use "../../variables" as v;
+
+.banner {
+  position: relative;
+  z-index: 1;
+  margin-top: -96px;
+
+  .dark_back {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, black, transparent);
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-md;
+    color: v.$main-color;
+    position: absolute;
+    max-width: 50%;
+    left: v.$space-lg;
+    bottom: v.$space-lg;
+    .title {
+      font-size: v.$text-lg;
+    }
+    .description {
+      font-size: v.$space-s;
+      line-height: 1.1;
+    }
+  }
+}

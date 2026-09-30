@@ -1,0 +1,19 @@
+@use "../variables" as v;
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-s;
+  margin: 0 v.$space-lg;
+
+  .title {
+    font-size: v.$text-md;
+    font-weight: 700;
+    margin-bottom: v.$space-s;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+}

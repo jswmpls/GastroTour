@@ -1,0 +1,15 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 64px;
+}
+.catalog .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.catalog .list {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=page.module.css.map */

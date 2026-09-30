@@ -7,13 +7,16 @@ import styles from "./Header.module.scss";
 const links = [
   { href: "/", label: "Главная" },
   { href: "/catalog", label: "Каталог" },
+  { href: "/about", label: "О проекте" },
 ];
 
 export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${pathname === "/" ? styles.dark : ""}`}
+    >
       <Link href="/" className={styles.logo}>
         GastroTour
       </Link>
@@ -31,7 +34,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <Link href="/auth/login" className={styles.login}>
+      <Link href="/auth/login" className={`${styles.link} ${styles.login}`}>
         Войти
       </Link>
     </header>

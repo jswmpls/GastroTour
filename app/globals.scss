@@ -2,10 +2,13 @@
 
 body {
   background-color: v.$main-color;
+  color: v.$text-color;
   font-family: manrope, sans-serif;
   font-size: 16px;
+  line-height: 1;
+  padding-top: v.$header-height;
 }
 
-* {
+a {
   color: v.$text-color;
 }

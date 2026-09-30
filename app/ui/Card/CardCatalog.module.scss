@@ -1,0 +1,42 @@
+@use "../../variables" as v;
+
+.card {
+  display: flex;
+  gap: v.$space-sm;
+
+  .imageWrap {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    aspect-ratio: 4/3;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .image {
+    object-fit: cover;
+  }
+
+  .info {
+    line-height: 1.5;
+  }
+
+  .type {
+    width: fit-content;
+    padding: 4px 12px;
+    border: 1px solid v.$border-color;
+    border-radius: 999px;
+    background: v.$gray;
+    line-height: 1.2;
+  }
+
+  .title {
+    font-size: v.$text-sm;
+    font-weight: 600;
+  }
+
+  .kitchen_price {
+    display: flex;
+    gap: v.$space-xs;
+  }
+}

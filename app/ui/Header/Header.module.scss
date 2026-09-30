@@ -1,10 +1,16 @@
 @use "../../variables" as v;
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 64px;
+  padding: v.$space-md v.$space-lg;
+  height: v.$header-height;
 
   .logo {
     font-size: 24px;
@@ -12,16 +18,31 @@
 
   .list {
     display: flex;
-    gap: 24px;
+    gap: v.$space-s;
   }
 
   .link {
-    &.active {
-      color: v.$green;
-    }
-
+    &.active,
     &:hover {
       color: v.$green;
+    }
+  }
+
+  &.dark {
+    background: linear-gradient(black, transparent);
+    color: v.$main-color;
+
+    .logo {
+      color: inherit;
+    }
+
+    .link {
+      color: inherit;
+
+      &.active,
+      &:hover {
+        color: v.$green;
+      }
     }
   }
 }
