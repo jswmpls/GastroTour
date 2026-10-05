@@ -1,0 +1,119 @@
+@use "../../variables" as v;
+
+.place {
+  margin: 0;
+  color: v.$text-color;
+
+  .placeCard {
+    position: relative;
+    margin-top: -96px;
+    display: flex;
+    color: v.$main-color;
+    width: 100%;
+
+    .dark_back {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, black, transparent);
+    }
+
+    .imageWrap {
+      height: 90vh;
+
+      .image {
+        object-fit: cover;
+      }
+    }
+
+    .info {
+      font-size: v.$text-md;
+      display: flex;
+      flex-direction: column;
+      gap: v.$space-sm;
+      position: absolute;
+      bottom: v.$space-md;
+      left: v.$space-md;
+      z-index: 2;
+
+      .type {
+        width: fit-content;
+        padding: 4px 12px;
+        border: 1px solid v.$border-color;
+        border-radius: 999px;
+        background: v.$main-color;
+        color: v.$text-color;
+      }
+
+      .kitchen_price {
+        display: flex;
+      }
+    }
+  }
+
+  .placeImages {
+    margin: v.$space-md;
+
+    .list {
+      display: flex;
+      gap: v.$space-md;
+      overflow-x: auto;
+
+      .image {
+        width: auto;
+        border-radius: v.$border-radius;
+      }
+    }
+  }
+
+  .placeDescription {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: v.$space-lg;
+    margin: v.$space-md;
+
+    .info {
+      grid-column: span 2 / span 2;
+
+      .list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: v.$space-s;
+
+        .item {
+          .title {
+            display: flex;
+            gap: v.$space-xs;
+          }
+        }
+      }
+    }
+    .menu {
+      grid-column-start: 3;
+    }
+  }
+
+  .placeMenu {
+    .list {
+      margin-top: v.$space-sm;
+      display: flex;
+      flex-direction: column;
+      gap: v.$space-sm;
+
+      .item {
+        position: relative;
+        padding: 8px;
+
+        &::after {
+          content: ">";
+          font-size: v.$text-sm;
+          position: absolute;
+          right: v.$space-s;
+          top: 50%;
+          transform: translateY(-50%); // вертикальное центрирование
+        }
+      }
+    }
+  }
+}

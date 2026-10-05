@@ -10,13 +10,18 @@ const links = [
   { href: "/about", label: "О проекте" },
 ];
 
+function isHeaderDark(pathname: string) {
+  if (pathname === "/") return true;
+  const segment = pathname.split("/").filter(Boolean);
+  return segment[0] === "catalog" && segment.length === 2;
+}
+
 export default function Header() {
   const pathname = usePathname();
+  const dark = isHeaderDark(pathname);
 
   return (
-    <header
-      className={`${styles.header} ${pathname === "/" ? styles.dark : ""}`}
-    >
+    <header className={`${styles.header} ${dark ? styles.dark : ""}`}>
       <Link href="/" className={styles.logo}>
         GastroTour
       </Link>

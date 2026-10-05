@@ -17,26 +17,55 @@
     object-fit: cover;
   }
 
-  .info {
-    line-height: 1.5;
-  }
-
   .type {
     width: fit-content;
     padding: 4px 12px;
     border: 1px solid v.$border-color;
     border-radius: 999px;
     background: v.$gray;
-    line-height: 1.2;
-  }
-
-  .title {
-    font-size: v.$text-sm;
-    font-weight: 600;
   }
 
   .kitchen_price {
     display: flex;
     gap: v.$space-xs;
+  }
+
+  &.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: v.$space-sm;
+    margin-top: v.$space-s;
+
+    .imageWrap {
+      position: relative;
+      flex-shrink: 0;
+      aspect-ratio: 4/3;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .image {
+      object-fit: cover;
+    }
+
+    .title {
+      display: inline;
+    }
+
+    .type {
+      position: relative;
+      top: -32px;
+      width: fit-content;
+      padding: 4px 12px;
+      border: 1px solid v.$border-color;
+      border-radius: 999px;
+      background: v.$gray;
+    }
+
+    .kitchen_price {
+      display: flex;
+      gap: v.$space-xs;
+    }
   }
 }

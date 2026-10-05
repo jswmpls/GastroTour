@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../.kilo/worktrees/equable-linen/app/globals.scss","../.kilo/worktrees/equable-linen/app/_variables.scss"],"names":[],"mappings":"AAEA;EACE,kBCFW;EDGX;EACA;;;AAGF;EACE,OCTW","file":"globals.css"}
+{"version":3,"sourceRoot":"","sources":["../app/globals.scss","../app/_variables.scss"],"names":[],"mappings":"AAEA;EACE,kBCFW;EDGX,OCJW;EDKX;EACA;EACA;EACA,aCUc;;;ADPhB;EACE,OCZW;;;ADeb;EACE;EACA;;;AAGF;EACE,WCNQ;EDOR;;;AAGF;EACE,WCZQ;EDaR;;;AAGF;EACE,WClBO;EDmBP","file":"globals.css"}

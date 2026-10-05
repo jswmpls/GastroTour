@@ -1,0 +1,15 @@
+@use "./variables" as v;
+
+.main {
+  margin: 0;
+}
+
+.popular {
+  margin: v.$space-s v.$space-lg;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    gap: v.$space-sm;
+  }
+}

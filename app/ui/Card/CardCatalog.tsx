@@ -1,26 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./CardCatalog.module.scss";
+import { usePathname } from "next/navigation";
+import type { Place } from "../../data/types";
 
-type CardCatalogProps = {
-  title: string;
-  type: string;
-  kitchen: string;
-  price: string;
-  address: string;
-  rating: number;
-  reviewsCount: number;
-  image: string;
-  imageAlt: string;
-};
+export default function CardCatalog(props: Place) {
+  const pathname = usePathname();
 
-export default function CardCatalog(props: CardCatalogProps) {
   return (
-    <div className={styles.card}>
+    <div
+      className={`${styles.card} ${pathname === "/" ? styles.main : undefined}`}
+    >
       <div className={styles.imageWrap}>
         <Image
-          src={props.image}
+          src={props.photos[0].src}
           className={styles.image}
-          alt={props.imageAlt}
+          alt={props.photos[0].alt}
           fill
           sizes="300px"
         />

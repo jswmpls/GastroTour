@@ -1,10 +1,32 @@
 body {
   background-color: #fbf8f4;
+  color: #454648;
   font-family: manrope, sans-serif;
   font-size: 16px;
+  line-height: 1;
+  padding-top: 96px;
 }
 
-* {
+a {
   color: #454648;
-}/*# sourceMappingURL=globals.css.map */ color: #454648;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.2;
 }/*# sourceMappingURL=globals.css.map */

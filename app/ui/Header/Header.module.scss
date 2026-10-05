@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   height: v.$header-height;
 
   .logo {
-    font-size: 24px;
+    font-size: v.$text-sm;
   }
 
   .list {
@@ -25,12 +25,16 @@
     &.active,
     &:hover {
       color: v.$green;
+      border-bottom: 2px solid v.$green;
+      border-radius: 6px;
+      padding-bottom: 3px;
     }
   }
 
   &.dark {
     background: linear-gradient(black, transparent);
     color: v.$main-color;
+    margin: 0;
 
     .logo {
       color: inherit;

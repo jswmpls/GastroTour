@@ -3,17 +3,38 @@
 .catalog {
   display: flex;
   flex-direction: column;
-  gap: v.$space-s;
-  margin: 0 v.$space-lg;
 
   .title {
-    font-size: v.$text-md;
-    font-weight: 700;
     margin-bottom: v.$space-s;
   }
 
   .list {
     display: flex;
     flex-direction: column;
+    gap: v.$space-sm;
+
+    .item {
+      position: relative;
+      width: 100%;
+      height: fit-content;
+
+      .favorite {
+        position: absolute;
+        top: v.$space-sm;
+        right: v.$space-sm;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+
+        .image {
+          pointer-events: none;
+          background-image: transparent;
+          object-fit: contain;
+        }
+      }
+    }
   }
 }

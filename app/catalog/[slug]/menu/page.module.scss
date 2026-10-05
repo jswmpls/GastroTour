@@ -1,0 +1,63 @@
+@use "../../../variables" as v;
+
+.title {
+  margin-bottom: v.$space-s;
+}
+
+.filters {
+  .list {
+    display: flex;
+    gap: v.$space-s;
+    margin-bottom: v.$space-s;
+
+    .item {
+      display: block;
+      border: 1px solid v.$border-color;
+      border-radius: v.$border-radius;
+      padding: v.$space-xs v.$space-sm;
+
+      &:hover {
+        background-color: v.$border-color;
+      }
+    }
+  }
+}
+
+.menu {
+  .categories {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-s;
+
+    .categoryTitle {
+      margin-bottom: v.$space-xs;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: v.$space-xs;
+    }
+  }
+}
+
+.up {
+  position: fixed;
+  right: v.$space-lg;
+  bottom: v.$space-lg;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  background-color: white;
+  border: 1px solid v.$border-color;
+
+  &:hover {
+    background-color: v.$border-color;
+  }
+}

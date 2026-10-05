@@ -1,15 +1,60 @@
-.catalog {
+.place {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin: 0 64px;
+  gap: 16px;
 }
-.catalog .title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 24px;
+.place .imageWrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 2/1;
+  overflow: hidden;
 }
-.catalog .list {
+.place .image {
+  object-fit: cover;
+}
+.place .type {
+  width: fit-content;
+  padding: 4px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 999px;
+  background: #ebe9e7;
+}
+.place .kitchen_price {
+  display: flex;
+  gap: 8px;
+}
+.place.main {
   display: flex;
   flex-direction: column;
+  max-width: 300px;
+  gap: 16px;
+  margin-top: 24px;
+}
+.place.main .imageWrap {
+  position: relative;
+  flex-shrink: 0;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.place.main .image {
+  object-fit: cover;
+}
+.place.main .title {
+  display: inline;
+}
+.place.main .type {
+  position: relative;
+  top: -32px;
+  width: fit-content;
+  padding: 4px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 999px;
+  background: #ebe9e7;
+}
+.place.main .kitchen_price {
+  display: flex;
+  gap: 8px;
 }/*# sourceMappingURL=page.module.css.map */

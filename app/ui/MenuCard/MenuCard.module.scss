@@ -1,0 +1,16 @@
+@use "../../variables" as v;
+
+.card {
+  position: relative;
+  padding: v.$space-md v.$space-s;
+  border: 1px solid v.$border-color;
+  border-radius: v.$border-radius;
+
+  .price {
+    position: absolute;
+    top: v.$space-xs;
+    right: v.$space-xs;
+  }
+}
+
+

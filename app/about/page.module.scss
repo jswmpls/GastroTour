@@ -1,0 +1,21 @@
+@use "../variables" as v;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-s;
+
+  .title {
+    margin-bottom: v.$space-sm;
+  }
+
+  .description {
+    line-height: 1.2;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: v.$space-s;
+  }
+}

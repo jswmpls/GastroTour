@@ -1,9 +1,4 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,4 +30,4 @@
 }
 .header.dark .link.active, .header.dark .link:hover {
   color: #1e453d;
-}/*# sourceMappingURL=Header.module.css.map */
+}/*# sourceMappingURL=Footer.module.css.map */
