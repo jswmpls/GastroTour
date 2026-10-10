@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +26,7 @@
 .header.dark {
   background: linear-gradient(black, transparent);
   color: #fbf8f4;
+  margin: 0;
 }
 .header.dark .logo {
   color: inherit;

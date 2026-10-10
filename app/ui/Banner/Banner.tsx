@@ -9,6 +9,8 @@ function Banner() {
         src={bannerImage}
         alt="Изображение ресторана"
         className={styles.image}
+        fill
+        priority
       />
       <div className={styles.dark_back}></div>
       <div className={styles.info}>

@@ -1,60 +1,43 @@
-.place {
+.page {
+  text-align: center;
+}
+.page .title {
+  margin-bottom: 16px;
+}
+.page .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+  margin: 0 auto;
+  width: 300px;
 }
-.place .imageWrap {
-  position: relative;
-  flex-shrink: 0;
-  width: 100%;
-  max-height: 400px;
-  aspect-ratio: 2/1;
-  overflow: hidden;
-}
-.place .image {
-  object-fit: cover;
-}
-.place .type {
-  width: fit-content;
-  padding: 4px 12px;
-  border: 1px solid #c8c8c8;
-  border-radius: 999px;
-  background: #ebe9e7;
-}
-.place .kitchen_price {
-  display: flex;
-  gap: 8px;
-}
-.place.main {
+.page .form .block {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  gap: 16px;
-  margin-top: 24px;
-}
-.place.main .imageWrap {
-  position: relative;
-  flex-shrink: 0;
-  aspect-ratio: 4/3;
-  border-radius: 16px;
-  overflow: hidden;
-}
-.place.main .image {
-  object-fit: cover;
-}
-.place.main .title {
-  display: inline;
-}
-.place.main .type {
-  position: relative;
-  top: -32px;
-  width: fit-content;
-  padding: 4px 12px;
-  border: 1px solid #c8c8c8;
-  border-radius: 999px;
-  background: #ebe9e7;
-}
-.place.main .kitchen_price {
-  display: flex;
+  align-items: start;
   gap: 8px;
+}
+.page .form .block input {
+  width: 300px;
+  padding: 8px 8px;
+  border: 1px solid #c8c8c8;
+  border-radius: 12px;
+  background-color: #fbf8f4;
+}
+.page .form .block label {
+  font-size: 12px;
+}
+.page .reg {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+.page .reg p {
+  font-size: inherit;
+}
+.page .reg .link:hover {
+  color: #4b8176;
 }/*# sourceMappingURL=page.module.css.map */

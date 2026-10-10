@@ -1,15 +1,26 @@
 @use "./variables" as v;
 
-.main {
-  margin: 0;
-}
-
 .popular {
-  margin: v.$space-s v.$space-lg;
-
+  margin: v.$space-md 0;
   .list {
     display: flex;
     justify-content: space-between;
     gap: v.$space-sm;
+  }
+}
+
+@media (max-width: 1000px) {
+  .popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: v.$space-s;
+    }
   }
 }

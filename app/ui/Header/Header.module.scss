@@ -11,6 +11,7 @@
   align-items: center;
   padding: v.$space-md v.$space-lg;
   height: v.$header-height;
+  box-sizing: border-box;
 
   .logo {
     font-size: v.$text-sm;

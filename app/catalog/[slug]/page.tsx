@@ -6,6 +6,7 @@ import Image from "next/image";
 import mealIco from "../../../public/icons/Meal.svg";
 import timeIco from "../../../public/icons/Time.svg";
 import priceIco from "../../../public/icons/price.svg";
+import PlaceMapClient from "./PlaceMapClient";
 
 type PlacePageProps = {
   params: Promise<{ slug: string }>;
@@ -109,6 +110,12 @@ export default async function PlacePage({ params }: PlacePageProps) {
               </li>
             ))}
           </ul>
+          <div id="first_map" className={styles.map}>
+            <PlaceMapClient
+              lat={place.coordinates.lat}
+              lng={place.coordinates.lng}
+            />
+          </div>
         </section>
 
         {/* Меню */}

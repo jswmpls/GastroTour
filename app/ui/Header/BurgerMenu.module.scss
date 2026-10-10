@@ -1,0 +1,87 @@
+@use "../../variables" as v;
+
+.burderModal {
+  position: fixed;
+  z-index: 11;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: v.$main-color;
+
+  nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: v.$space-md;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: v.$space-md;
+  }
+
+  a,
+  .link {
+    color: inherit;
+
+    &:hover,
+    &.active {
+      color: v.$green;
+    }
+  }
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: v.$space-md v.$space-lg;
+  height: v.$header-height;
+
+  .logo {
+    font-size: v.$text-sm;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-s;
+  }
+
+  .link {
+    &.active,
+    &:hover {
+      color: v.$green;
+      border-bottom: 2px solid v.$green;
+      border-radius: 6px;
+      padding-bottom: 3px;
+    }
+  }
+
+  &.dark {
+    background: linear-gradient(black, transparent);
+    color: v.$main-color;
+    margin: 0;
+
+    .logo {
+      color: inherit;
+    }
+
+    .link {
+      color: inherit;
+
+      &.active,
+      &:hover {
+        color: v.$green;
+      }
+    }
+  }
+}

@@ -1,5 +1,9 @@
 @use "variables" as v;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: v.$main-color;
   color: v.$text-color;
@@ -40,4 +44,44 @@ p {
 
 main {
   margin: 0 v.$space-lg;
+}
+
+button {
+  padding: v.$space-xs v.$space-s;
+  cursor: pointer;
+  border-radius: v.$border-radius;
+  background-color: v.$main-color;
+  border: 1px solid v.$border-color;
+  color: v.$text-color;
+
+  &:hover {
+    background-color: v.$green;
+    color: v.$main-color;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: v.$text-md;
+  }
+
+  h2 {
+    font-size: v.$text-sm;
+  }
+
+  h3 {
+    font-size: v.$text-s;
+  }
+
+  h4 {
+    font-size: v.$text-xs;
+  }
+
+  p {
+    font-size: v.$text-xs;
+  }
+
+  main {
+    margin: 0 v.$space-md;
+  }
 }

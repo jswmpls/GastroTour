@@ -93,7 +93,7 @@ export const places: Place[] = [
         ],
       },
     ],
-    coordinates: { lat: 59.9341, lng: 30.3148 },
+    coordinates: { lat: 59.930928, lng: 30.3235 },
     features: ["Wi-Fi", "Танцпол", "Работает до утра", "Можно с компанией"],
     phone: "+7 (812) 000-00-01",
     website: "https://neon-bar.example",
@@ -113,11 +113,30 @@ export const places: Place[] = [
         src: "/places/broken-hearts-bar/broken-hearts-bar.png",
         alt: "Интерьер бара Разбитых Сердец",
       },
-      { src: "/places/neon/image1.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image2.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image3.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image4.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image5.png", alt: "Интерьер бара Неон" },
+      {
+        src: "/places/broken-hearts-bar/image1.png",
+        alt: "Интерьер бара Разбитых Сердец",
+      },
+      {
+        src: "/places/broken-hearts-bar/image2.png",
+        alt: "Интерьер бара Разбитых Сердец",
+      },
+      {
+        src: "/places/broken-hearts-bar/image3.png",
+        alt: "Интерьер бара Разбитых Сердец",
+      },
+      {
+        src: "/places/broken-hearts-bar/image4.png",
+        alt: "Интерьер бара Разбитых Сердец",
+      },
+      {
+        src: "/places/broken-hearts-bar/image5.png",
+        alt: "Интерьер бара Разбитых Сердец",
+      },
+      {
+        src: "/places/broken-hearts-bar/image6.png",
+        alt: "Интерьер бара Разбитых Сердец",
+      },
     ],
     description:
       "Камерный бар на набережной канала Грибоедова с говорящим названием и очень петербургским характером. Небольшой зал, приглушённый свет, винил на фоне — сюда приходят не за громкой музыкой, а за разговором. Меню интернациональное, коктейли авторские, часто с сезонными ингредиентами.",
@@ -170,7 +189,7 @@ export const places: Place[] = [
         ],
       },
     ],
-    coordinates: { lat: 59.9329, lng: 30.3234 },
+    coordinates: { lat: 59.931672, lng: 30.328791 },
     features: ["Wi-Fi", "Винил", "Камерная атмосфера", "Бронирование"],
     phone: "+7 (812) 000-00-02",
     website: "https://broken-hearts.example",
@@ -187,14 +206,29 @@ export const places: Place[] = [
     reviewsCount: 2868,
     photos: [
       {
-        src: "/places/old-man-khinkalych/image.png",
+        src: "/places/old-man-khinkalych/old-man-khinkalych.png",
         alt: "Интерьер ресторана Старик Хинкалыч",
       },
-      { src: "/places/neon/image1.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image2.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image3.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image4.png", alt: "Интерьер бара Неон" },
-      { src: "/places/neon/image5.png", alt: "Интерьер бара Неон" },
+      {
+        src: "/places/old-man-khinkalych/image1.png",
+        alt: "Интерьер бара Неон",
+      },
+      {
+        src: "/places/old-man-khinkalych/image2.png",
+        alt: "Интерьер old-man-khinkalych Неон",
+      },
+      {
+        src: "/places/old-man-khinkalych/image3.png",
+        alt: "Интерьер бара Неон",
+      },
+      {
+        src: "/places/old-man-khinkalych/image4.png",
+        alt: "Интерьер бара Неон",
+      },
+      {
+        src: "/places/old-man-khinkalych/image5.png",
+        alt: "Интерьер бара Неон",
+      },
     ],
     description:
       "Грузинский ресторан в самом центре — прямо на набережной Мойки. Здесь всё по классике: хинкали с сочным бульоном внутри, хачапури по-аджарски, хаш, чахохбили и домашнее вино. Порции щедрые, цены гуманные для локации, а интерьер тёплый и обжитой. Место популярное, столик лучше бронировать.",
@@ -265,10 +299,283 @@ export const places: Place[] = [
         ],
       },
     ],
-    coordinates: { lat: 59.9311, lng: 30.3184 },
+    coordinates: { lat: 59.933324, lng: 30.315392 },
     features: ["Wi-Fi", "Веранда", "Можно с детьми", "Бронирование"],
     phone: "+7 (812) 000-00-03",
     website: "https://khinkalych.example",
+  },
+
+  {
+    slug: "v-kvartire",
+    title: "В квартире",
+    type: "Кофейня, кафе, бильярдный клуб",
+    kitchen: "Европейская",
+    price: "300–500 ₽",
+    address: "наб. Обводного канала, 121, Санкт-Петербург",
+    rating: 4.9,
+    reviewsCount: 205,
+    photos: [
+      {
+        src: "/places/v-kvartire/v-kvartire.png",
+        alt: "Интерьер кофейни В квартире",
+      },
+      {
+        src: "/places/v-kvartire/image1.png",
+        alt: "Бильярдный зал в кофейне В квартире",
+      },
+      {
+        src: "/places/v-kvartire/image2.png",
+        alt: "Атмосфера кооператива Вираж",
+      },
+      { src: "/places/v-kvartire/image3.png", alt: "Кофейная стойка" },
+      {
+        src: "/places/v-kvartire/image4.png",
+        alt: "Бильярдный зал в кофейне В квартире",
+      },
+    ],
+    description:
+      "Атмосферное кафе-кооператив «Вираж» в историческом здании на Обводном канале. Интерьер оформлен в стиле европейских шестидесятых: на стенах — велосипеды и гоночная экипировка. Здесь можно выпить кофе, пообедать, починить велосипед, посмотреть кино и сыграть партию в бильярд. Первая игра в бильярд — бесплатно при заказе от 350 ₽.",
+    hours: [
+      { days: "Пн–Чт", time: "12:00–21:00" },
+      { days: "Пт–Сб", time: "12:00–21:00" },
+      { days: "Вс", time: "12:00–21:00" },
+    ],
+    menu: [
+      {
+        slug: "coffee",
+        title: "Кофе",
+        items: [
+          { name: "Эспрессо", price: 100, weight: "30 мл" },
+          { name: "Капучино", price: 150, weight: "200 мл" },
+          { name: "Латте", price: 180, weight: "250 мл" },
+        ],
+      },
+      {
+        slug: "snacks",
+        title: "Закуски",
+        items: [
+          { name: "Круассан с ветчиной и сыром", price: 250, weight: "120 г" },
+          { name: "Салат дня", price: 300, weight: "200 г" },
+        ],
+      },
+    ],
+    coordinates: { lat: 59.9107, lng: 30.3246 },
+    features: [
+      "Бильярд",
+      "Кинопоказы",
+      "Веломasterская",
+      "Мерч",
+      "Можно с компанией",
+    ],
+    phone: "+7 (961) 810-32-48",
+    website: "https://instagram.com/v.kvartire",
+  },
+
+  {
+    slug: "ossi",
+    title: "Осси",
+    type: "Бар, коворкинг, кафе",
+    kitchen: "Европейская",
+    price: "400–800 ₽",
+    address: "ул. Радищева, 25, Санкт-Петербург",
+    rating: 4.9,
+    reviewsCount: 587,
+    photos: [
+      { src: "/places/ossi/ossi.png", alt: "Интерьер бара Осси" },
+      { src: "/places/ossi/image1.png", alt: "Уютные диванчики в баре Осси" },
+      { src: "/places/ossi/image2.png", alt: "Барная стойка Осси" },
+      { src: "/places/ossi/image3.png", alt: "Атмосфера коворкинга" },
+      { src: "/places/ossi/image4.png", alt: "Атмосфера коворкинга" },
+    ],
+    description:
+      "Городской бар и арт-пространство в стиле последних лет ГДР с домашней атмосферой. Три комнаты, уютные кресла, клетчатые подушки и миниатюрные торшеры из 80-х. В меню — крафтовое пиво, сидры, настойки, лимонады и лёгкие закуски. Здесь проводят стендапы, поэтические вечера, кинопоказы и можно поиграть в настолки. Отличное место для работы и встреч с друзьями.",
+    hours: [
+      { days: "Пн–Чт", time: "16:00–01:00" },
+      { days: "Пт–Сб", time: "16:00–04:00" },
+      { days: "Вс", time: "16:00–01:00" },
+    ],
+    menu: [
+      {
+        slug: "beer",
+        title: "Пиво и сидры",
+        items: [
+          { name: "Крафтовое пиво", price: 400, weight: "500 мл" },
+          { name: "Сидр", price: 350, weight: "400 мл" },
+        ],
+      },
+      {
+        slug: "snacks",
+        title: "Закуски",
+        items: [
+          { name: "Сэндвич с курицей и руколой", price: 250, weight: "200 г" },
+          { name: "Сырная тарелка", price: 300, weight: "180 г" },
+          { name: "Мясная тарелка", price: 300, weight: "180 г" },
+          { name: "Острый чечил", price: 220, weight: "100 г" },
+        ],
+      },
+    ],
+    coordinates: { lat: 59.9384, lng: 30.3637 },
+    features: [
+      "Wi-Fi",
+      "Коворкинг",
+      "Настольные игры",
+      "Стендап",
+      "Кинопоказы",
+      "Оплата картой",
+    ],
+    phone: "+7 (812) 579-58-20",
+    website: "https://t.me/ossi_bar_spb",
+  },
+
+  {
+    slug: "zvonok",
+    title: "Звонок",
+    type: "Бар",
+    kitchen: "Русская",
+    price: "300–600 ₽",
+    address: "ул. Некрасова, 34, Санкт-Петербург",
+    rating: 5.0,
+    reviewsCount: 412,
+    photos: [
+      { src: "/places/zvonok/zvonok.png", alt: "Интерьер рюмочной Звонок" },
+      { src: "/places/zvonok/image1.png", alt: "Барная стойка Звонок" },
+      {
+        src: "/places/zvonok/image2.png",
+        alt: "Выставка современного искусства в баре",
+      },
+      { src: "/places/zvonok/image3.png", alt: "Атмосфера русской гостиной" },
+      { src: "/places/zvonok/image4.png", alt: "Атмосфера русской гостиной" },
+    ],
+    description:
+      "Рюмочная в историческом центре Петербурга, которая смело совмещает антураж классической русской гостиной с выставками современного искусства. Меню лаконичное: пиво, вино, компот и кофе, а также салаты и лёгкие закуски. Вода бесплатная. Отличное место для камерных встреч и знакомства с местной арт-сценой.",
+    hours: [
+      { days: "Пн–Чт", time: "16:00–02:00" },
+      { days: "Пт–Сб", time: "16:00–04:00" },
+      { days: "Вс", time: "16:00–02:00" },
+    ],
+    menu: [
+      {
+        slug: "drinks",
+        title: "Напитки",
+        items: [
+          { name: "Пиво (токсовское)", price: 300, weight: "500 мл" },
+          { name: "Вино", price: 250, weight: "150 мл" },
+          { name: "Компот", price: 100, weight: "300 мл" },
+          { name: "Кофе", price: 100, weight: "200 мл" },
+        ],
+      },
+      {
+        slug: "snacks",
+        title: "Закуски",
+        items: [
+          { name: "Салат из печени трески", price: 300, weight: "180 г" },
+        ],
+      },
+    ],
+    coordinates: { lat: 59.938937, lng: 30.358987 },
+    features: [
+      "Выставки",
+      "Бесплатная вода",
+      "Оплата картой",
+      "Камерная атмосфера",
+    ],
+    phone: "+7 (905) 225-05-50",
+    website: "https://vk.com/zvonok_bar",
+  },
+
+  {
+    slug: "poltory-komnaty",
+    title: "Полторы комнаты",
+    type: "Бар",
+    kitchen: "Европейская, авторская",
+    price: "700–1500 ₽",
+    address: "ул. Маяковского, 34/4, Санкт-Петербург",
+    rating: 5.0,
+    reviewsCount: 4261,
+    photos: [
+      {
+        src: "/places/poltory-komnaty/poltory-komnaty.png",
+        alt: "Интерьер бара Полторы комнаты",
+      },
+      { src: "/places/poltory-komnaty/image1.png", alt: "Коктейльный зал" },
+      {
+        src: "/places/poltory-komnaty/image2.png",
+        alt: "Книжные полки в баре",
+      },
+      {
+        src: "/places/poltory-komnaty/image3.png",
+        alt: "Атмосфера бара Полторы комнаты",
+      },
+      {
+        src: "/places/poltory-komnaty/image4.png",
+        alt: "Атмосфера бара Полторы комнаты",
+      },
+    ],
+    description:
+      "Коктейльный бар с изящным алкоголем и закусками, расположенный в музее Иосифа Бродского «Полторы комнаты». Барная стойка установлена прямо среди книжных полок. В меню — авторские коктейли, европейская и смешанная кухня. Есть экспериментальное меню «Мегаполис», доступное по предварительному бронированию. Музыка: электронная, рок, рок-н-ролл. Wi-Fi, кофе с собой, можно с животными.",
+    hours: [
+      { days: "Пн–Чт", time: "18:00–02:00" },
+      { days: "Пт–Сб", time: "18:00–03:00" },
+      { days: "Вс", time: "18:00–02:00" },
+    ],
+    menu: [
+      {
+        slug: "cocktails",
+        title: "Коктейли",
+        items: [
+          {
+            name: "Анпакинг",
+            description: "Джин, кедровая скорлупа, микс вермутов",
+            price: 790,
+            weight: "200 мл",
+          },
+          {
+            name: "Лотерея",
+            description: "Виски-сауэр на 12-летнем виски с морошкой",
+            price: 850,
+            weight: "180 мл",
+          },
+          {
+            name: "Ленинградский",
+            description: "Смесь вермутов, херес, морошковый рассол",
+            price: 790,
+            weight: "200 мл",
+          },
+          {
+            name: "Самаркандский",
+            description: "Орехово-сухофруктовый твист на «Манхэттен»",
+            price: 790,
+            weight: "200 мл",
+          },
+        ],
+      },
+      {
+        slug: "snacks",
+        title: "Закуски",
+        items: [
+          {
+            name: "Котлеты с картофельным пюре в кастрюле",
+            price: 650,
+            weight: "350 г",
+          },
+          { name: "Печень по-венециански", price: 590, weight: "220 г" },
+          { name: "Форшмак", price: 450, weight: "180 г" },
+          { name: "Пельмени", price: 550, weight: "250 г" },
+        ],
+      },
+    ],
+    coordinates: { lat: 59.9379196, lng: 30.3551186 },
+    features: [
+      "Wi-Fi",
+      "Кофе с собой",
+      "Можно с животными",
+      "Бронирование",
+      "Оплата картой",
+      "Подарочный сертификат",
+      "Музыка: электронная, рок, рок-н-ролл",
+    ],
+    phone: "+7 (921) 941-82-07",
+    website: "https://perfectbarsteam.ru",
   },
 ];
 

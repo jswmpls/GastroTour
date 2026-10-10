@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Header.module.scss";
@@ -25,7 +26,7 @@ export default function Header() {
       <Link href="/" className={styles.logo}>
         GastroTour
       </Link>
-      <nav className={styles.nav}>
+      <nav>
         <ul className={styles.list}>
           {links.map((link) => (
             <li key={link.href}>
