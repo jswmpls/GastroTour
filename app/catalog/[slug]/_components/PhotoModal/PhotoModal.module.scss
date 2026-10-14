@@ -1,0 +1,50 @@
+@use "../../../../variables" as v;
+
+.placeImages {
+  margin: v.$space-md;
+
+  .list {
+    display: flex;
+    gap: v.$space-sm;
+    overflow-x: auto;
+
+    button {
+      border: none;
+      background-color: transparent;
+    }
+
+    .image {
+      width: auto;
+      cursor: zoom-in;
+      border-radius: v.$border-radius;
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  .image {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    cursor: zoom-out;
+  }
+
+  button {
+    position: absolute;
+    top: v.$space-s;
+    right: v.$space-md;
+    background-color: transparent;
+    border: none;
+  }
+}

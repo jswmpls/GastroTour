@@ -13,8 +13,8 @@ function MainPage() {
         <section className={styles.popular}>
           <h2 className={styles.title}>Популярное</h2>
           <ul className={styles.list}>
-            {places.map((place) => (
-              <li key={place.slug}>
+            {places.slice(0, 6).map((place) => (
+              <li key={place.slug} className={styles.item}>
                 <Link key={place.slug} href={`/catalog/${place.slug}`}>
                   <CardCatalog {...place} />
                 </Link>

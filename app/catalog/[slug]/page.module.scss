@@ -51,21 +51,6 @@
     }
   }
 
-  .placeImages {
-    margin: v.$space-md;
-
-    .list {
-      display: flex;
-      gap: v.$space-md;
-      overflow-x: auto;
-
-      .image {
-        width: auto;
-        border-radius: v.$border-radius;
-      }
-    }
-  }
-
   .placeDescription {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

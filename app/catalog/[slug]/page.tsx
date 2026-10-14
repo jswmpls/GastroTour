@@ -6,10 +6,16 @@ import Image from "next/image";
 import mealIco from "../../../public/icons/Meal.svg";
 import timeIco from "../../../public/icons/Time.svg";
 import priceIco from "../../../public/icons/price.svg";
-import PlaceMapClient from "./PlaceMapClient";
+import PlaceMapClient from "./_components/PlaceMap/PlaceMapClient";
+import PhotoModal from "./_components/PhotoModal/PhotoModal";
 
 type PlacePageProps = {
   params: Promise<{ slug: string }>;
+};
+
+type PlacePhoto = {
+  src: string;
+  alt: string;
 };
 
 function nowDate(): number {
@@ -74,20 +80,9 @@ export default async function PlacePage({ params }: PlacePageProps) {
         </div>
       </section>
 
+      {/* Изображения */}
       <section className={styles.placeImages}>
-        <ul className={styles.list}>
-          {place.photos.slice(1).map((photo) => (
-            <li key={photo.src}>
-              <Image
-                src={photo.src}
-                className={styles.image}
-                alt={photo.alt}
-                width={300}
-                height={200}
-              />
-            </li>
-          ))}
-        </ul>
+        <PhotoModal photos={place.photos} />
       </section>
 
       <section className={styles.placeDescription}>

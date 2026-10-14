@@ -19,3 +19,14 @@
     gap: v.$space-s;
   }
 }
+
+@media (max-width: 500px) {
+  .about {
+    justify-content: center;
+    align-items: center;
+    .cards {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

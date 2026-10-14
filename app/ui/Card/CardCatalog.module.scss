@@ -69,3 +69,15 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .card {
+    position: relative;
+    flex-direction: column;
+
+    .type {
+      position: absolute;
+      top: 200px;
+    }
+  }
+}

@@ -38,3 +38,29 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .catalog {
+    align-items: center;
+    justify-content: center;
+
+    .list {
+      .item {
+        padding: v.$space-sm;
+        width: min-content;
+
+        .favorite {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: v.$space-s;
+          right: v.$space-s;
+          background-color: v.$main-color;
+          border-radius: 50%;
+          padding: v.$space-s;
+        }
+      }
+    }
+  }
+}

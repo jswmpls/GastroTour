@@ -26,8 +26,8 @@ function CatalogPage() {
                   src={heart0}
                   alt="Кнопка добавить в избранное"
                   className={styles.image}
-                  fill
-                  sizes="25px"
+                  width={25}
+                  height={25}
                 />
               </button>
             </div>
