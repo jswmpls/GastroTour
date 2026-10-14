@@ -6,8 +6,8 @@ import Image from "next/image";
 import mealIco from "../../../public/icons/Meal.svg";
 import timeIco from "../../../public/icons/Time.svg";
 import priceIco from "../../../public/icons/price.svg";
-import PlaceMapClient from "./_components/PlaceMap/PlaceMapClient";
-import PhotoModal from "./_components/PhotoModal/PhotoModal";
+import PlaceMapClient from "../_components/PlaceMap/PlaceMapClient";
+import PhotoModal from "../_components/PhotoModal/PhotoModal";
 
 type PlacePageProps = {
   params: Promise<{ slug: string }>;

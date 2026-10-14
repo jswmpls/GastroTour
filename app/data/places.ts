@@ -308,7 +308,7 @@ export const places: Place[] = [
   {
     slug: "v-kvartire",
     title: "В квартире",
-    type: "Кофейня, кафе, бильярдный клуб",
+    type: "Кофейня",
     kitchen: "Европейская",
     price: "300–500 ₽",
     address: "наб. Обводного канала, 121, Санкт-Петербург",
@@ -374,7 +374,7 @@ export const places: Place[] = [
   {
     slug: "ossi",
     title: "Осси",
-    type: "Бар, коворкинг, кафе",
+    type: "Бар",
     kitchen: "Европейская",
     price: "400–800 ₽",
     address: "ул. Радищева, 25, Санкт-Петербург",
@@ -487,7 +487,7 @@ export const places: Place[] = [
     slug: "poltory-komnaty",
     title: "Полторы комнаты",
     type: "Бар",
-    kitchen: "Европейская, авторская",
+    kitchen: "Европейская",
     price: "700–1500 ₽",
     address: "ул. Маяковского, 34/4, Санкт-Петербург",
     rating: 5.0,

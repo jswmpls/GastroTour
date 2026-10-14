@@ -1,0 +1,76 @@
+@use "../../../variables" as v;
+
+.filter {
+  display: flex;
+  gap: v.$space-s;
+  flex-direction: row;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-xs;
+    margin-bottom: v.$space-md;
+  }
+
+  select {
+    padding: v.$space-xs 0;
+    border: 1px solid v.$border-color;
+    border-radius: v.$border-radius;
+    width: 150px;
+  }
+
+  label {
+    font-size: v.$text-xs;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: v.$space-sm;
+
+  .item {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+
+    .favorite {
+      position: absolute;
+      top: v.$space-sm;
+      right: v.$space-sm;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+
+      .image {
+        pointer-events: none;
+        background-image: transparent;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    .item {
+      padding: v.$space-sm;
+      width: min-content;
+
+      .favorite {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: v.$space-s;
+        right: v.$space-s;
+        background-color: v.$main-color;
+        border-radius: 50%;
+        padding: v.$space-s;
+      }
+    }
+  }
+}
